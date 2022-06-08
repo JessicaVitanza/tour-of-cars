@@ -1,7 +1,7 @@
 .car-list-item{
   display: flex;
   flex-direction: column;
-  border: 1px solid;
+  border: 1px solid rgb(179, 180, 177);
   margin-bottom: 4px;
   padding: 4px;
   width:300px;
@@ -10,4 +10,11 @@
 
 .button-detail{
   border-radius: 4px;
+  background-color: rgba(179, 180, 177, 0.414);
+  border: none;
+}
+
+.selected {
+  border-color:black;
+  border-width: 2px;
 }

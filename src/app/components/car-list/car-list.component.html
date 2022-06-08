@@ -1,4 +1,6 @@
-<div class="car-list-item" *ngFor="let car of carsArray">
+<app-car-detail [car]="selectedCar"></app-car-detail>
+
+<div class="car-list-item" *ngFor="let car of carsArray" [class.selected] = "selectedCar === car">
     <span>Modello : {{car.model}}</span>
     <span>Produttore: {{car.producer}}</span>
     <button class="button-detail"(click)="openDetail(car)">apri dettaglio</button>

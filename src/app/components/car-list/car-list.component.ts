@@ -11,6 +11,8 @@ export class CarListComponent implements OnInit {
   
   carsArray : Car[] = [];
 
+  selectedCar? : Car;
+
   constructor(private carService : CarApiService) { }
 
   ngOnInit(): void {
@@ -21,7 +23,7 @@ export class CarListComponent implements OnInit {
   }
 
   openDetail(car : Car){
-     console.log(car);
+     this.selectedCar = car;
   }
 
 }
