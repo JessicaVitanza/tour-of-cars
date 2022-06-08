@@ -1,0 +1,5 @@
+<div class="car-list-item" *ngFor="let car of carsArray">
+    <span>Modello : {{car.model}}</span>
+    <span>Produttore: {{car.producer}}</span>
+    <button class="button-detail"(click)="openDetail(car)">apri dettaglio</button>
+</div>
